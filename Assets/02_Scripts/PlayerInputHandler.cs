@@ -1,47 +1,33 @@
-// 11/22/2024 AI-Tag
+// 11/13/2024 AI-Tag
 // This was created with assistance from Muse, a Unity Artificial Intelligence product
 
-using System;
-using UnityEditor;
+// InputHandler.cs
 using UnityEngine;
-using InputSystem;
+using UnityEngine.InputSystem;
 
 public class PlayerInputHandler : MonoBehaviour
 {
     public Vector2 MoveInput { get; private set; }
     public Vector2 LookInput { get; private set; }
 
-    private PlayerInput playerInput;
-
-    private void Awake()
-    {
-        playerInput = new PlayerInput();
-    }
+    [SerializeField] private InputActionProperty moveAction;
+    [SerializeField] private InputActionProperty lookAction;
 
     private void OnEnable()
     {
-        playerInput.Player.Enable();
-        playerInput.Player.Move.performed += OnMove;
-        playerInput.Player.Look.performed += OnLook;
-
-        playerInput.Player.Move.canceled += ctx => MoveInput = Vector2.zero;
-        playerInput.Player.Look.canceled += ctx => LookInput = Vector2.zero;
+        moveAction.action.Enable();
+        lookAction.action.Enable();
     }
 
     private void OnDisable()
     {
-        playerInput.Player.Move.performed -= OnMove;
-        playerInput.Player.Look.performed -= OnLook;
-        playerInput.Player.Disable();
+        moveAction.action.Disable();
+        lookAction.action.Disable();
     }
 
-    private void OnMove(InputAction.CallbackContext context)
+    private void Update()
     {
-        MoveInput = context.ReadValue<Vector2>();
-    }
-
-    private void OnLook(InputAction.CallbackContext context)
-    {
-        LookInput = context.ReadValue<Vector2>();
+        MoveInput = moveAction.action.ReadValue<Vector2>();
+        LookInput = lookAction.action.ReadValue<Vector2>();
     }
 }

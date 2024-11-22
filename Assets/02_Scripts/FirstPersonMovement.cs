@@ -1,49 +1,43 @@
-// 11/12/2024 AI-Tag
+// 11/13/2024 AI-Tag
 // This was created with assistance from Muse, a Unity Artificial Intelligence product
 
+// FirstPersonMovement.cs
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class FirstPersonController : MonoBehaviour
+[RequireComponent(typeof(CharacterController))]
+public class FirstPersonMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    public float lookSpeed = 2f;
-
-    public InputActionProperty moveAction;
-    public InputActionProperty lookAction;
+    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float lookSpeed = 2f;
+    [SerializeField] private float rotationSmoothing = 0.1f;
 
     private CharacterController characterController;
+    private PlayerInputHandler inputHandler;
     private float verticalLookRotation;
+    private Quaternion targetRotation;
+    private Quaternion targetCameraRotation;
 
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
-    }
-
-    private void OnEnable()
-    {
-        moveAction.action.Enable();
-        lookAction.action.Enable();
-    }
-
-    private void OnDisable()
-    {
-        moveAction.action.Disable();
-        lookAction.action.Disable();
+        inputHandler = GetComponent<PlayerInputHandler>();
+        targetRotation = transform.rotation;
+        targetCameraRotation = Camera.main.transform.localRotation;
     }
 
     private void Update()
     {
         // Move player
-        Vector2 moveInput = moveAction.action.ReadValue<Vector2>();
-        Vector3 move = transform.right * moveInput.x + transform.forward * moveInput.y;
+        Vector3 move = transform.right * inputHandler.MoveInput.x + transform.forward * inputHandler.MoveInput.y;
         characterController.Move(move * moveSpeed * Time.deltaTime);
 
-        // Look around
-        Vector2 lookInput = lookAction.action.ReadValue<Vector2>();
-        transform.Rotate(Vector3.up * lookInput.x * lookSpeed);
-        verticalLookRotation -= lookInput.y * lookSpeed;
+        // Smooth rotation using Slerp
+        targetRotation *= Quaternion.Euler(0f, inputHandler.LookInput.x * lookSpeed, 0f);
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSmoothing);
+
+        verticalLookRotation -= inputHandler.LookInput.y * lookSpeed;
         verticalLookRotation = Mathf.Clamp(verticalLookRotation, -90f, 90f);
-        Camera.main.transform.localEulerAngles = Vector3.right * verticalLookRotation;
+        targetCameraRotation = Quaternion.Euler(verticalLookRotation, 0f, 0f);
+        Camera.main.transform.localRotation = Quaternion.Slerp(Camera.main.transform.localRotation, targetCameraRotation, rotationSmoothing);
     }
 }

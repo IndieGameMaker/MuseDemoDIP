@@ -50,3 +50,5 @@ Humanoid shape with sharp horns growing from its head
 ```
 Glowing red eyes piercing through the darkness
 ```
+
+https://discussions.unity.com/t/unity-muse-sprites-prompt-recommendation-discussions/330676

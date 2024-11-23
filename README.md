@@ -34,3 +34,15 @@ Rusted metal plate texture with irregular holes. Emphasize the rough, corroded s
 ```
 low resolution, uniform pattern
 ```
+
+```
+Creature from Norse mythology
+```
+
+```
+Standing in a dark, misty forest
+```
+
+```
+Humanoid shape with sharp horns growing from its head
+```

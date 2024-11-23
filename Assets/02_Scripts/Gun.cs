@@ -44,7 +44,7 @@ public class Gun : MonoBehaviour
             // 총알 발사 로직
             GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
             Rigidbody rb = bullet.GetComponent<Rigidbody>();
-            rb.AddForce(bulletSpawnPoint.forward * 100.0f);
+            rb.AddForce(bulletSpawnPoint.forward * 300.0f);
             currentAmmo--;
         }
     }

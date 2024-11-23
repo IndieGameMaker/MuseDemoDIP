@@ -28,4 +28,9 @@ uniform pattern, broken surface, repetitvie design
 ```
 
 ```
+Rusted metal plate texture with irregular holes. Emphasize the rough, corroded surface and varying shades of brown and orange rust, with an aged, industrial appearanc.
+```
+
+```
+low resolution, uniform pattern
 ```

@@ -33,6 +33,8 @@ MonoBehaviour:
   - rid: 973379474142265679
   - rid: 973379474142265685
   - rid: 973379474142265691
+  - rid: 973379474142265713
+  - rid: 973379474142265716
   currentMode: TextToImage
   m_Data:
   - rid: 973379474142265569
@@ -43,7 +45,7 @@ MonoBehaviour:
   refinedArtifact:
     rid: -2
   selectedArtifact:
-    rid: 973379474142265649
+    rid: 973379474142265691
   m_Operators:
   - rid: 973379474142265572
   - rid: 973379474142265573
@@ -51,7 +53,27 @@ MonoBehaviour:
   - rid: 973379474142265575
   - rid: 973379474142265576
   m_PreRefineOperators: []
-  m_ExportedArtifacts: []
+  m_ExportedArtifacts:
+  - m_UnityGuid: 3f85e089a67db49829a0315cc057144e
+    m_MuseGuid: 1788b7eb-781d-413c-a96d-e072eefd5d90
+  - m_UnityGuid: a827042201ac248949664e388934e243
+    m_MuseGuid: 1788b7eb-781d-413c-a96d-e072eefd5d90
+  - m_UnityGuid: ccd47ebe8a89c42b5bb447e31ddaab03
+    m_MuseGuid: 1788b7eb-781d-413c-a96d-e072eefd5d90
+  - m_UnityGuid: 459f6bafca6e54691b8e46bfca5f8ab3
+    m_MuseGuid: 1788b7eb-781d-413c-a96d-e072eefd5d90
+  - m_UnityGuid: 6e49fc1f45bb441f4abbe3b1346a018d
+    m_MuseGuid: 1788b7eb-781d-413c-a96d-e072eefd5d90
+  - m_UnityGuid: 667395663c00b487aabc35b05a486322
+    m_MuseGuid: 1788b7eb-781d-413c-a96d-e072eefd5d90
+  - m_UnityGuid: b39677b0bded94711b66899b5b6e8a43
+    m_MuseGuid: 1788b7eb-781d-413c-a96d-e072eefd5d90
+  - m_UnityGuid: 02dcd6cb617a248788e003ab74b9399a
+    m_MuseGuid: 1788b7eb-781d-413c-a96d-e072eefd5d90
+  - m_UnityGuid: 6d15d9ef7711d438c82a4292b92d80a3
+    m_MuseGuid: 1788b7eb-781d-413c-a96d-e072eefd5d90
+  - m_UnityGuid: 15263a86b072945b0873949e3439d412
+    m_MuseGuid: 5cc49040-3bbf-4421-aa0c-ea30cbba05be
   references:
     version: 2
     RefIds:
@@ -2063,6 +2085,106 @@ MonoBehaviour:
           - 
           - True
           - 1
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 973379474142265713
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: 
+        Guid: 4f33dd36-b021-4d5e-b09c-bff8e1339b41
+        BatchRequestIdentifier: 
+        Seed: 0
+        m_Operators:
+        - rid: 973379474142265714
+        - rid: 973379474142265715
+        history:
+        - rid: 973379474142265713
+        children: []
+        IsPbrMode: 1
+    - rid: 973379474142265714
+      type: {class: UpscaleOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: UpscaleOperator
+          key: UpscaleOperator
+          version: 0.0.1
+          settings:
+          - 1788b7eb-781d-413c-a96d-e072eefd5d90
+          - '{"operators":[{"type":"GenerateOperator","key":"GenerateOperator","version":"1.0.0","settings":["TextToImage","4"],"enabled":true,"assembly":"","hideable":false,"hidden":false,"isRefinement":false},{"type":"PromptOperator","key":"PromptOperator","version":"0.0.2","settings":["luxury
+            Carrara white marble, delicate gray vein patterns, polished glossy surface,
+            subtle crystalline structure, natural color variation, seamless tiling,
+            high reflectivity, photorealistic marble texture","uniform pattern, broken
+            surface, repetitvie design"],"enabled":true,"assembly":"","hideable":false,"hidden":false,"isRefinement":false},{"type":"LoraOperator","key":"LoraOperator","version":"0.0.1","settings":["guid1"],"enabled":false,"assembly":"","hideable":false,"hidden":false,"isRefinement":false},{"type":"ReferenceOperator","key":"ReferenceOperator","version":"0.0.2","settings":["","","1","16",""],"enabled":true,"assembly":"","hideable":false,"hidden":false,"isRefinement":false},{"type":"MaskOperator","key":"MaskOperator","version":"0.0.1","settings":["","True","1"],"enabled":false,"assembly":"","hideable":false,"hidden":false,"isRefinement":false}]}'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 973379474142265715
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - luxury Carrara white marble, delicate gray vein patterns, polished glossy
+            surface, subtle crystalline structure, natural color variation, seamless
+            tiling, high reflectivity, photorealistic marble texture
+          - uniform pattern, broken surface, repetitvie design
+          enabled: 0
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 973379474142265716
+      type: {class: ImageArtifact, ns: Unity.Muse.Texture, asm: Unity.Muse.Texture}
+      data:
+        mode: 
+        Guid: 5cc49040-3bbf-4421-aa0c-ea30cbba05be
+        BatchRequestIdentifier: 
+        Seed: 0
+        m_Operators:
+        - rid: 973379474142265717
+        - rid: 973379474142265718
+        history:
+        - rid: 973379474142265716
+        children: []
+        IsPbrMode: 0
+    - rid: 973379474142265717
+      type: {class: UpscaleOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: UpscaleOperator
+          key: UpscaleOperator
+          version: 0.0.1
+          settings:
+          - 1788b7eb-781d-413c-a96d-e072eefd5d90
+          - '{"operators":[{"type":"GenerateOperator","key":"GenerateOperator","version":"1.0.0","settings":["TextToImage","4"],"enabled":true,"assembly":"","hideable":false,"hidden":false,"isRefinement":false},{"type":"PromptOperator","key":"PromptOperator","version":"0.0.2","settings":["luxury
+            Carrara white marble, delicate gray vein patterns, polished glossy surface,
+            subtle crystalline structure, natural color variation, seamless tiling,
+            high reflectivity, photorealistic marble texture","uniform pattern, broken
+            surface, repetitvie design"],"enabled":true,"assembly":"","hideable":false,"hidden":false,"isRefinement":false},{"type":"LoraOperator","key":"LoraOperator","version":"0.0.1","settings":["guid1"],"enabled":false,"assembly":"","hideable":false,"hidden":false,"isRefinement":false},{"type":"ReferenceOperator","key":"ReferenceOperator","version":"0.0.2","settings":["","","1","16",""],"enabled":true,"assembly":"","hideable":false,"hidden":false,"isRefinement":false},{"type":"MaskOperator","key":"MaskOperator","version":"0.0.1","settings":["","True","1"],"enabled":false,"assembly":"","hideable":false,"hidden":false,"isRefinement":false}]}'
+          enabled: 1
+          assembly: 
+          hideable: 0
+          hidden: 0
+          isRefinement: 0
+    - rid: 973379474142265718
+      type: {class: PromptOperator, ns: Unity.Muse.Common, asm: Unity.Muse.Common}
+      data:
+        m_OperatorData:
+          type: PromptOperator
+          key: PromptOperator
+          version: 0.0.2
+          settings:
+          - luxury Carrara white marble, delicate gray vein patterns, polished glossy
+            surface, subtle crystalline structure, natural color variation, seamless
+            tiling, high reflectivity, photorealistic marble texture
+          - uniform pattern, broken surface, repetitvie design
           enabled: 0
           assembly: 
           hideable: 0

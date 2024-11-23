@@ -17,6 +17,11 @@ aged red brick wall, irregular surface texture, subtle cracks and wear, gray mor
 ```
 
 ```
+[한글]
+고급스러운 캐러라 화이트 대리석, 섬세한 회색 베인 패턴, 매끄럽고 광택 있는 표면, 은은한 결정감, 자연스러운 색상 변화, 완벽한 타일링, 높은 반사율
+
+[영문]
+luxury Carrara white marble, delicate gray vein patterns, polished glossy surface, subtle crystalline structure, natural color variation, seamless tiling, high reflectivity, photorealistic marble texture
 ```
 
 ```

@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 410087040}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -579,6 +579,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2349258150479485684, guid: cc4156adf6614cb4693b57fd602cf0b9, type: 3}
   m_PrefabInstance: {fileID: 1102319439}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1102319441 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6408781692567222837, guid: cc4156adf6614cb4693b57fd602cf0b9, type: 3}
+  m_PrefabInstance: {fileID: 1102319439}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1310242337
 GameObject:
   m_ObjectHideFlags: 0
@@ -589,7 +594,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1310242338}
   - component: {fileID: 1310242341}
-  - component: {fileID: 1310242340}
   - component: {fileID: 1310242339}
   m_Layer: 0
   m_Name: Weapon Camera
@@ -657,14 +661,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!81 &1310242340
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310242337}
-  m_Enabled: 1
 --- !u!20 &1310242341
 Camera:
   m_ObjectHideFlags: 0
@@ -728,6 +724,7 @@ GameObject:
   - component: {fileID: 1482303635}
   - component: {fileID: 1482303637}
   - component: {fileID: 1482303638}
+  - component: {fileID: 1482303639}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -827,6 +824,22 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -5630151704836100654, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+--- !u!114 &1482303639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482303634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9db549f7ded4903a240418794e2d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxAmmo: 10
+  reloadTime: 2
+  bulletPrefab: {fileID: 7110826897005383701, guid: 5827a8bf27f454dd3b05ddddbb2116a7, type: 3}
+  bulletSpawnPoint: {fileID: 1102319441}
 --- !u!1 &1795380345
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,7 +904,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f5ffb23c71776424f8f776c97d3fd190, type: 2}
+  - {fileID: 2100000, guid: 7a7cdfb4453ee4f029646fd32bac612e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

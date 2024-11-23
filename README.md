@@ -46,3 +46,7 @@ Standing in a dark, misty forest
 ```
 Humanoid shape with sharp horns growing from its head
 ```
+
+```
+Glowing red eyes piercing through the darkness
+```

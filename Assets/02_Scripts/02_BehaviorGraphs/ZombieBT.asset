@@ -198,115 +198,115 @@ MonoBehaviour:
   m_Name: ZombieBT
   m_EditorClassIdentifier: 
   Graphs:
-  - rid: 973379477864448432
+  - rid: 973379477864448541
   RootGraph:
-    rid: 973379477864448432
+    rid: 973379477864448541
   m_DebugInfo: {fileID: 4960347546097230659}
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 973379477864448432
+    - rid: 973379477864448541
       type: {class: BehaviorGraphModule, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         AuthoringAssetID:
           m_Value0: 8251828328433971646
           m_Value1: 5136113230579156728
-        m_DebugInfo: {fileID: 0}
+        m_DebugInfo: {fileID: 4960347546097230659}
         Root:
-          rid: 973379477864448433
+          rid: 973379477864448542
         BlackboardReference:
-          rid: 973379477864448434
+          rid: 973379477864448543
         BlackboardGroupReferences: []
         m_VersionTimestamp: 638679682451137360
-    - rid: 973379477864448433
+    - rid: 973379477864448542
       type: {class: Start, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 5637968776296785864
           m_Value1: 14043238902719877558
         Graph:
-          rid: 973379477864448432
+          rid: 973379477864448541
         m_Parent:
           rid: -2
         m_Child:
-          rid: 973379477864448435
+          rid: 973379477864448544
         Repeat: 0
-    - rid: 973379477864448434
+    - rid: 973379477864448543
       type: {class: BlackboardReference, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         m_Blackboard:
-          rid: 973379477864448436
+          rid: 973379477864448545
         m_Source: {fileID: -4967923120119232603}
-    - rid: 973379477864448435
+    - rid: 973379477864448544
       type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 11781576873787391268
           m_Value1: 3291216909225534544
         Graph:
-          rid: 973379477864448432
+          rid: 973379477864448541
         m_Parent:
-          rid: 973379477864448433
+          rid: 973379477864448542
         m_Children:
-        - rid: 973379477864448437
-        - rid: 973379477864448438
-        - rid: 973379477864448439
-    - rid: 973379477864448436
+        - rid: 973379477864448546
+        - rid: 973379477864448547
+        - rid: 973379477864448548
+    - rid: 973379477864448545
       type: {class: Blackboard, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         m_Variables:
-        - rid: 973379477864448440
-        - rid: 973379477864448441
-        - rid: 973379477864448442
-        - rid: 973379477864448443
-        - rid: 973379477864448444
-        - rid: 973379477864448445
-        - rid: 973379477864448446
-    - rid: 973379477864448437
+        - rid: 973379477864448549
+        - rid: 973379477864448550
+        - rid: 973379477864448551
+        - rid: 973379477864448552
+        - rid: 973379477864448553
+        - rid: 973379477864448554
+        - rid: 973379477864448555
+    - rid: 973379477864448546
       type: {class: FindObjectWithTagAction, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 8240390361746081942
           m_Value1: 12945148253543025522
         Graph:
-          rid: 973379477864448432
+          rid: 973379477864448541
         m_Parent:
-          rid: 973379477864448435
+          rid: 973379477864448544
         Object:
-          rid: 973379477864448447
+          rid: 973379477864448556
         Tag:
-          rid: 973379477864448442
-    - rid: 973379477864448438
+          rid: 973379477864448551
+    - rid: 973379477864448547
       type: {class: InitZombieAction, ns: , asm: Assembly-CSharp}
       data:
         ID:
           m_Value0: 15098118470170745742
           m_Value1: 9211313240475056281
         Graph:
-          rid: 973379477864448432
+          rid: 973379477864448541
         m_Parent:
-          rid: 973379477864448435
+          rid: 973379477864448544
         ZombieDataSO:
-          rid: 973379477864448445
+          rid: 973379477864448554
         TraceDistance:
-          rid: 973379477864448443
+          rid: 973379477864448552
         AttackDistance:
-          rid: 973379477864448444
-    - rid: 973379477864448439
+          rid: 973379477864448553
+    - rid: 973379477864448548
       type: {class: RepeaterModifier, ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         ID:
           m_Value0: 14174830571962490794
           m_Value1: 15830075400955816559
         Graph:
-          rid: 973379477864448432
+          rid: 973379477864448541
         m_Parent:
-          rid: 973379477864448435
+          rid: 973379477864448544
         m_Child:
-          rid: 973379477864448448
-    - rid: 973379477864448440
+          rid: 973379477864448557
+    - rid: 973379477864448549
       type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
@@ -314,7 +314,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 0}
-    - rid: 973379477864448441
+    - rid: 973379477864448550
       type: {class: 'BlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
@@ -322,7 +322,7 @@ MonoBehaviour:
           m_Value1: 3933636538905077535
         Name: Player
         m_Value: {fileID: 0}
-    - rid: 973379477864448442
+    - rid: 973379477864448551
       type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
@@ -330,7 +330,7 @@ MonoBehaviour:
           m_Value1: 337312114039338482
         Name: PlayerTag
         m_Value: Player
-    - rid: 973379477864448443
+    - rid: 973379477864448552
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
@@ -338,7 +338,7 @@ MonoBehaviour:
           m_Value1: 4913931869246775427
         Name: TraceDistance
         m_Value: 0
-    - rid: 973379477864448444
+    - rid: 973379477864448553
       type: {class: 'BlackboardVariable`1[[System.Single, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
@@ -346,7 +346,7 @@ MonoBehaviour:
           m_Value1: 13655897617976449553
         Name: AttackDistance
         m_Value: 0
-    - rid: 973379477864448445
+    - rid: 973379477864448554
       type: {class: 'BlackboardVariable`1[[ZombieDataSO, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
@@ -354,7 +354,7 @@ MonoBehaviour:
           m_Value1: 9656186320711453286
         Name: ZombieDataSO
         m_Value: {fileID: 11400000, guid: 189f975e44b3d43e0919cd51643298a2, type: 2}
-    - rid: 973379477864448446
+    - rid: 973379477864448555
       type: {class: 'BlackboardVariable`1[[State, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
@@ -362,7 +362,7 @@ MonoBehaviour:
           m_Value1: 12210689326877014500
         Name: State
         m_Value: 0
-    - rid: 973379477864448447
+    - rid: 973379477864448556
       type: {class: 'ComponentToGameObjectBlackboardVariable`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
@@ -371,27 +371,27 @@ MonoBehaviour:
         Name: 
         m_Value: {fileID: 0}
         m_LinkedVariable:
-          rid: 973379477864448441
-    - rid: 973379477864448448
+          rid: 973379477864448550
+    - rid: 973379477864448557
       type: {class: CheckStateAction, ns: , asm: Assembly-CSharp}
       data:
         ID:
           m_Value0: 11244666719817511189
           m_Value1: 14193584775001403624
         Graph:
-          rid: 973379477864448432
+          rid: 973379477864448541
         m_Parent:
-          rid: 973379477864448439
+          rid: 973379477864448548
         Agent:
-          rid: 973379477864448440
+          rid: 973379477864448549
         Player:
-          rid: 973379477864448441
+          rid: 973379477864448550
         TraceDistance:
-          rid: 973379477864448443
+          rid: 973379477864448552
         AttackDistance:
-          rid: 973379477864448444
+          rid: 973379477864448553
         State:
-          rid: 973379477864448446
+          rid: 973379477864448555
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -593,7 +593,7 @@ MonoBehaviour:
         LocalValue:
           rid: 973379475692847993
         LinkedVariable:
-          rid: 973379477864448395
+          rid: 973379477864448558
     - rid: 973379475692847992
       type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
@@ -604,7 +604,7 @@ MonoBehaviour:
         LocalValue:
           rid: 973379475692847994
         LinkedVariable:
-          rid: 973379477864448396
+          rid: 973379477864448559
     - rid: 973379475692847993
       type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -671,7 +671,7 @@ MonoBehaviour:
         LocalValue:
           rid: 973379477864448020
         LinkedVariable:
-          rid: 973379477864448397
+          rid: 973379477864448560
     - rid: 973379477864448016
       type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
@@ -682,7 +682,7 @@ MonoBehaviour:
         LocalValue:
           rid: 973379477864448021
         LinkedVariable:
-          rid: 973379477864448398
+          rid: 973379477864448561
     - rid: 973379477864448017
       type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
@@ -693,7 +693,7 @@ MonoBehaviour:
         LocalValue:
           rid: 973379477864448023
         LinkedVariable:
-          rid: 973379477864448399
+          rid: 973379477864448562
     - rid: 973379477864448020
       type: {class: 'BlackboardVariable`1[[ZombieDataSO, Assembly-CSharp]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -846,7 +846,7 @@ MonoBehaviour:
         LocalValue:
           rid: 973379477864448400
         LinkedVariable:
-          rid: 973379477864448405
+          rid: 973379477864448563
     - rid: 973379477864448391
       type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
@@ -857,7 +857,7 @@ MonoBehaviour:
         LocalValue:
           rid: 973379477864448401
         LinkedVariable:
-          rid: 973379477864448395
+          rid: 973379477864448558
     - rid: 973379477864448392
       type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
@@ -868,7 +868,7 @@ MonoBehaviour:
         LocalValue:
           rid: 973379477864448402
         LinkedVariable:
-          rid: 973379477864448398
+          rid: 973379477864448561
     - rid: 973379477864448393
       type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
@@ -879,7 +879,7 @@ MonoBehaviour:
         LocalValue:
           rid: 973379477864448403
         LinkedVariable:
-          rid: 973379477864448399
+          rid: 973379477864448562
     - rid: 973379477864448394
       type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
       data:
@@ -890,57 +890,7 @@ MonoBehaviour:
         LocalValue:
           rid: 973379477864448404
         LinkedVariable:
-          rid: 973379477864448407
-    - rid: 973379477864448395
-      type: {class: 'TypedVariableModel`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
-      data:
-        ID:
-          m_Value0: 6256281965547224106
-          m_Value1: 3933636538905077535
-        Name: Player
-        IsExposed: 1
-        m_IsShared: 0
-        m_Value: {fileID: 0}
-    - rid: 973379477864448396
-      type: {class: 'TypedVariableModel`1[[System.String, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
-      data:
-        ID:
-          m_Value0: 13019993802479753610
-          m_Value1: 337312114039338482
-        Name: PlayerTag
-        IsExposed: 1
-        m_IsShared: 0
-        m_Value: Player
-    - rid: 973379477864448397
-      type: {class: 'TypedVariableModel`1[[ZombieDataSO, Assembly-CSharp]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
-      data:
-        ID:
-          m_Value0: 12679388396663012147
-          m_Value1: 9656186320711453286
-        Name: ZombieDataSO
-        IsExposed: 1
-        m_IsShared: 0
-        m_Value: {fileID: 11400000, guid: 189f975e44b3d43e0919cd51643298a2, type: 2}
-    - rid: 973379477864448398
-      type: {class: 'TypedVariableModel`1[[System.Single, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
-      data:
-        ID:
-          m_Value0: 9459800330816115913
-          m_Value1: 4913931869246775427
-        Name: TraceDistance
-        IsExposed: 1
-        m_IsShared: 0
-        m_Value: 0
-    - rid: 973379477864448399
-      type: {class: 'TypedVariableModel`1[[System.Single, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
-      data:
-        ID:
-          m_Value0: 12344910156508578290
-          m_Value1: 13655897617976449553
-        Name: AttackDistance
-        IsExposed: 1
-        m_IsShared: 0
-        m_Value: 0
+          rid: 973379477864448564
     - rid: 973379477864448400
       type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
@@ -981,7 +931,57 @@ MonoBehaviour:
           m_Value1: 0
         Name: 
         m_Value: 2
-    - rid: 973379477864448405
+    - rid: 973379477864448558
+      type: {class: 'TypedVariableModel`1[[UnityEngine.Transform, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 6256281965547224106
+          m_Value1: 3933636538905077535
+        Name: Player
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 973379477864448559
+      type: {class: 'TypedVariableModel`1[[System.String, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 13019993802479753610
+          m_Value1: 337312114039338482
+        Name: PlayerTag
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: Player
+    - rid: 973379477864448560
+      type: {class: 'TypedVariableModel`1[[ZombieDataSO, Assembly-CSharp]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 12679388396663012147
+          m_Value1: 9656186320711453286
+        Name: ZombieDataSO
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 11400000, guid: 189f975e44b3d43e0919cd51643298a2, type: 2}
+    - rid: 973379477864448561
+      type: {class: 'TypedVariableModel`1[[System.Single, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 9459800330816115913
+          m_Value1: 4913931869246775427
+        Name: TraceDistance
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 0
+    - rid: 973379477864448562
+      type: {class: 'TypedVariableModel`1[[System.Single, mscorlib]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 12344910156508578290
+          m_Value1: 13655897617976449553
+        Name: AttackDistance
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: 0
+    - rid: 973379477864448563
       type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:
@@ -991,7 +991,7 @@ MonoBehaviour:
         IsExposed: 1
         m_IsShared: 0
         m_Value: {fileID: 0}
-    - rid: 973379477864448407
+    - rid: 973379477864448564
       type: {class: 'TypedVariableModel`1[[State, Assembly-CSharp]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
       data:
         ID:

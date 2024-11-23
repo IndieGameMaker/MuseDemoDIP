@@ -22,6 +22,9 @@ aged red brick wall, irregular surface texture, subtle cracks and wear, gray mor
 
 [영문]
 luxury Carrara white marble, delicate gray vein patterns, polished glossy surface, subtle crystalline structure, natural color variation, seamless tiling, high reflectivity, photorealistic marble texture
+
+[Nagative Prompt]
+uniform pattern, broken surface, repetitvie design
 ```
 
 ```

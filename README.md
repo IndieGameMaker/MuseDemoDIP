@@ -1,5 +1,20 @@
 # 유니티 MUSE
 
+## Muse 과제
+
+- Muse Chat 활용한 코드 작성
+- Muse Texture 를 활용한 스테이지 제작
+- Muse Animate 를 활용한 NPC 제작
+- Muse Behavior 를 활용한 NPC 행동패턴 제작
+
+## 과제 업로드
+
+- 실행 동영상 업로드
+- 생성한 텍스처 프롬프트 및 파일 업로드
+- Behavior Graph 캡쳐본 업로드
+
+
+
 ## Muse Texture
 
 ### 바위
